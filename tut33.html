@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        /* Imp:- */
+        /* unsplash source --> This website provide you free images  */
+        
+        header::before {
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        /* -------------------------- */
+        
+        .navigation {
+            font-size: 20px;
+            display: flex;
+        }
+        
+        li {
+            list-style: none;
+            padding: 4px 29px;
+        }
+        /* -------------------------- */
+        
+        .item:hover {
+            color: aqua;
+            cursor: pointer;
+        }
+        /* --------------------------- */
+        
+        section {
+            height: 300px;
+            /* border: 2px solid red; */
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            word-spacing: 18px;
+            letter-spacing: 10px;
+            font-family: 'Akronim', cursive;
+        }
+        
+        p {
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+        }
+        /* section:before {
+            content: "This is a content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima hic debitis quaerat veritatis, impedit asperiores repellat totam error animi quasi, commodi temporibus. Error, pariatur. Nam quos, veritatis tempora officia tempore numquam.</p>
+    </section>
+    <hr>
+</body>
+
+</html>

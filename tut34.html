@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shodow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+    
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: cyan;
+        /* border: offset-x offset-y color; */
+        /* border: offset-x offset-y blur-radius color; */
+        /* border: offset-x offset-y blur-radius spread-radius color; */
+        /* ------------------------------------------------------------- */
+        /* box-shadow: 10px 12px purple; */
+        /* box-shadow: -10px -12px purple; */
+        /* box-shadow: 5px 7px 10px purple; */
+        /* box-shadow: 5px 7px 10px 25px rgba(71, 172, 172, 0.5); */
+        box-shadow: inset 6px 9px green;
+        box-shadow: 3px 5px green, 4px 6px red;
+    }
+    
+    .card h2 {
+        /* text-shadow: 2px 1px red; */
+        text-shadow: 2px 1px 2px red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore odit eaque ratione quod ducimus distinctio provident aperiam esse molestiae asperiores a, aliquam excepturi deserunt officiis minus nam tenetur debitis eveniet?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequuntur laboriosam animi quos minima blanditiis qui quasi dignissimos, nostrum debitis itaque est ipsam aperiam ad explicabo expedita distinctio, cum earum!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, necessitatibus quidem. Veniam quis doloremque alias, dolores labore aperiam nemo culpa impedit id laudantium sequi quibusdam deleniti delectus tempore accusantium fuga!</p>
+        </div>
+    </div>
+</body>
+
+</html>
